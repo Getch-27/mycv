@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 10px;
+    height: 5px;
+}
+
+body::-webkit-scrollbar-track-piece {
+    height: 50px;
+    background: #06283D;
+}
+
+.txt-name {
+    font-size: 3rem;
+}
+
+.nam-div {
+    border-right: 1px solid #f5f5c59f;
+}
+
+.hobbi {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 3%;
+    border-radius: 2%;
+    margin-bottom: 1%;
+    border-radius: 5%;
+    box-shadow: 0px 25px #00000056;
+}
+
+.txt-hobbies {
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.nav {
+    background: #06283D;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+
+.des {
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+.mainpage {
+    padding-top: 8%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.main {
+    min-height: 50vh;
+    width: 100%;
+    justify-items: end;
+    background-image: linear-gradient(45deg, #47B5FF, #47B5FF);
+    overflow: none;
+}
+
+.pp {
+    position: relative;
+    border-radius: 100%;
+    box-shadow: 15px 5px rgba(255, 255, 255, 0.253);
+    background-image: radial-gradient(circle at 20% 2%, transparent 50%, #06283D 50%);
+    height: 50%;
+    width: 50%;
+    left: 25%;
+    margin-bottom: 1%;
+    top: 8%;
+}
+
+.min-pp {
+    display: none;
+}
+
+.about {
+    background-image: linear-gradient(45deg, #DFF6FF, #DFF6FF);
+}
+
+.b1 {
+    border: 1px solid none;
+    height: 6px;
+    width: 8px;
+    border-radius: 50% 33% 50% 33%/50% 30% 50% 30%;
+    background-color: blanchedalmond;
+    position: absolute;
+}
+
+.box div:nth-child(1) {
+    top: 25%;
+    left: 50%;
+    animation: animate 5s linear infinite;
+}
+
+.box div:nth-child(2) {
+    top: 50%;
+    left: 25%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(3) {
+    top: 5%;
+    left: 50%;
+    animation: animate 8s linear infinite;
+}
+
+.box div:nth-child(4) {
+    top: 5%;
+    left: 5%;
+    animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(5) {
+    top: 5%;
+    left: 10%;
+    animation: animate 3s linear infinite;
+}
+
+.box div:nth-child(6) {
+    top: 5%;
+    left: 95%;
+    animation: animate 8s linear infinite;
+}
+
+.box div:nth-child(7) {
+    top: 5%;
+    left: 35%;
+    animation: animate 13s linear infinite;
+}
+
+.box div:nth-child(8) {
+    top: 0%;
+    left: 85%;
+    animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(9) {
+    top: 0%;
+    left: 25%;
+    animation: animate 20s linear infinite;
+}
+
+.box div:nth-child(10) {
+    top: 10%;
+    left: 65%;
+    animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translate3d(0, 0, 0) rotate(360deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3.5)translate3d(-90px, 90px, 0) rotate(0deg);
+        opacity: 0;
+    }
+}
+
+.pageheder {
+    color: #06283D;
+    text-align: center;
+    margin-top: 3%;
+}
+
+h5 {
+    margin: 15px 5px 2px;
+    text-transform: uppercase;
+    color: #06283D;
+}
+
+.skills {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.progres {
+    border: 1px solid #06283D;
+    border-radius: 10px;
+    width: 90%;
+    height: 20px;
+    text-align: center;
+    color: blue;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.persent {
+    text-align: right;
+    padding-right: 10px;
+    height: 100%;
+    width: 100px;
+    color: #06283D;
+    border-right: 1px solid #06283D;
+    animation: skill-animate 25s linear infinite;
+    background-image: repeating-linear-gradient( 45deg, transparent, #47B5FF);
+}
+
+@keyframes skill-animate {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 200vh;
+    }
+}
+
+.skill-exp {
+    color: #06283D
+}
+
+footer {
+    background-image: linear-gradient(45deg, #06283D, #06283D, #06283D);
+    background-size: cover;
+    color: #ffffff;
+    height: 50%;
+    overflow: hidden;
+}
+
+.foot-icon {
+    font-size: 2.5rem;
+    margin-top: auto;
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: inline;
+}
+
+.foot-hed {
+    color: #ffffff81;
+}
+
+.foot-icon:hover {
+    font-weight: 100px;
+}
+
+@media (max-width: 990px) {
+    .min-pp {
+        display: block;
+        position: relative;
+    }
+    .max-pp {
+        display: none;
+    }
+    .nam-div {
+        border: none;
+    }
+}
+
+@media (max-width: 396px) {
+    .txt-name {
+        font-size: 2.1rem;
+    }
+}
+
+.copy {
+    text-align: end;
+}
