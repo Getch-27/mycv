@@ -253,7 +253,7 @@
     .skill-exp {
         color: #06283D;
         overflow: hidden;
-        z-index: 3;
+        z-index: 0;
     }
     
     svg {
@@ -346,7 +346,7 @@
     .form-style {
         color: #8a8a8a;
         display: block;
-        width: 75%;
+        width: 90%;
         height: 44px;
         padding: 5px 2%;
         border: 1px solid #ccc;
