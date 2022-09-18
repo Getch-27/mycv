@@ -1,0 +1,42 @@
+.slide1 {
+    animation: slide1 1s linear forwards;
+}
+
+.slide2 {
+    opacity: 0;
+    animation: slide3 1s linear forwards;
+    animation-delay: .5s;
+}
+
+.one.slide2 {
+    animation-delay: .5s;
+}
+
+.two.slide2 {
+    animation-delay: .7s;
+}
+
+.three.slide2 {
+    animation-delay: 1s;
+}
+
+@keyframes slide1 {
+    0% {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide3 {
+    0% {
+        transform: translateX(-300px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
