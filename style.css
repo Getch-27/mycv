@@ -98,7 +98,28 @@
         background-image: linear-gradient(45deg, #DFF6FF, #DFF6FF);
     }
     
-  
+    .projectbtn {
+        margin-left: 50%;
+        padding: 5px;
+        margin-bottom: 1px;
+        border-radius: 25px;
+        background-image: linear-gradient(45deg, #47B5FF, #00226b);
+        border: rgba(17, 0, 252, 0.555) solid 1px;
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.342);
+        outline: none;
+    }
+    
+    .projectbtn a {
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    
+    .projectbtn:hover {
+        transition: .2s;
+        background-image: linear-gradient(45deg, #00226b, #47B5FF);
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.342);
+    }
     
     .b1 {
         border: 1px solid none;
@@ -232,7 +253,7 @@
     .skill-exp {
         color: #06283D;
         overflow: hidden;
-        
+        z-index: 0;
     }
     
     svg {
@@ -248,14 +269,14 @@
     }
     
     .contact-me {
-        margin-top: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
         text-align: center;
     }
     
     .listBox {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        width: 70%;
+        margin-left: 15%;
         display: flex;
         justify-content: space-between;
     }
@@ -265,56 +286,15 @@
         font-size: 2rem;
     }
     
-    @media (max-width: 990px) {
-        .min-pp {
-            display: block;
-            position: relative;
-        }
-        .max-pp {
-            display: none;
-        }
-        .nam-div {
-            border: none;
-        }
-        .foot-icon {
-            font-size: 2rem;
-            margin-left: 10px;
-        }
-        #conImage {
-            display: none;
-            width: 100%;
-            border-radius: 45% 55% 40% 60% / 39% 33% 67% 61%;
-        }
-        .listBox {
-            width: 60%;
-            margin-left: 20%;
-            margin-right: 20%;
-        }
-    }
-    
-    @media (max-width: 396px) {
-        .txt-name {
-            font-size: 2.1rem;
-        }
-    }
-    
-    .copy {
-        text-align: end;
-        margin-bottom: 2px;
-    }
-    
     form {
-        width: 40%;
         background-color: transparent;
         height: max-content;
-        border-radius: 5px;
-        padding: 20px;
     }
     
     div.form-item {
         position: relative;
         display: block;
-        margin-left: 13%;
+        margin-left: 15%;
         margin-bottom: 20px;
     }
     
@@ -325,7 +305,7 @@
     .form-style {
         color: #8a8a8a;
         display: block;
-        width: 90%;
+        width: 75%;
         height: 44px;
         padding: 5px 2%;
         border: 1px solid #ccc;
@@ -370,9 +350,9 @@
     }
     
     input[type="submit"].login {
-        width: 112px;
+        width: 30%;
         height: 37px;
-        margin-left: 20%;
+        margin-left: 25%;
         -moz-border-radius: 19px;
         -webkit-border-radius: 19px;
         border-radius: 19px;
@@ -404,4 +384,54 @@
     #conImage {
         width: 100%;
         border-radius: 45% 55% 40% 60% / 39% 33% 67% 61%;
+    }
+    
+    .smallConimage {
+        display: none;
+        width: 30%;
+        margin-left: 35%;
+        border-radius: 45% 55% 40% 60% / 39% 33% 67% 61%;
+    }
+    
+    @media (max-width: 990px) {
+        .min-pp {
+            display: block;
+            position: relative;
+        }
+        .max-pp {
+            display: none;
+        }
+        .nam-div {
+            border: none;
+        }
+        .foot-icon {
+            font-size: 2rem;
+            margin-left: 10px;
+        }
+        #conImage {
+            display: none;
+            width: 100%;
+            border-radius: 45% 55% 40% 60% / 39% 33% 67% 61%;
+        }
+        .smallConimage {
+            width: 30%;
+            margin-left: 35%;
+            border-radius: 45% 55% 40% 60% / 39% 33% 67% 61%;
+            display: block;
+        }
+        .listBox {
+            width: 60%;
+            margin-right: 20%;
+        }
+    }
+    
+    @media (max-width: 396px) {
+        .txt-name {
+            font-size: 2.1rem;
+        }
+    }
+    
+    .copy {
+        text-align: end;
+        margin-bottom: 2px;
     }
