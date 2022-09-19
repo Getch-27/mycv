@@ -414,8 +414,8 @@
             border-radius: 45% 55% 40% 60% / 39% 33% 67% 61%;
         }
         .smallConimage {
-            width: 30%;
-            margin-left: 35%;
+            width: 50%;
+            margin-left: 25%;
             border-radius: 45% 55% 40% 60% / 39% 33% 67% 61%;
             display: block;
         }
